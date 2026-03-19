@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="520" viewBox="0 0 400 520">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" style="stop-color:#2c2c54;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d0d1a;stop-opacity:1"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="520" fill="url(#bg)"/>
+  <!-- Stars -->
+  <circle cx="60" cy="60" r="2" fill="white" opacity="0.8"/>
+  <circle cx="340" cy="40" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="200" cy="30" r="1" fill="white" opacity="0.9"/>
+  <circle cx="80" cy="180" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="350" cy="150" r="2" fill="white" opacity="0.7"/>
+  <circle cx="30" cy="300" r="1" fill="white" opacity="0.6"/>
+  <circle cx="370" cy="260" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="120" cy="420" r="1" fill="white" opacity="0.5"/>
+  <circle cx="300" cy="440" r="1.5" fill="white" opacity="0.7"/>
+  <!-- Moon silhouette -->
+  <circle cx="200" cy="180" r="75" fill="#f0d080" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="200" cy="180" r="60" fill="none" stroke="#f0d080" stroke-width="2" opacity="0.4"/>
+  <!-- Person silhouette -->
+  <ellipse cx="200" cy="145" rx="30" ry="32" fill="#c8a0e0" opacity="0.5"/>
+  <path d="M 140,310 Q 200,250 260,310 L 270,430 Q 200,400 130,430 Z" fill="#9060c0" opacity="0.45"/>
+  <!-- Emoji moon -->
+  <text x="200" y="200" font-family="sans-serif" font-size="64" text-anchor="middle" fill="#f0d080" filter="url(#glow)">🌙</text>
+  <!-- Label -->
+  <text x="200" y="360" font-family="Arial,sans-serif" font-size="30" font-weight="bold" text-anchor="middle" fill="white" opacity="0.9">Black Dress</text>
+  <text x="200" y="400" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="rgba(255,255,255,0.5)">(Photo coming soon ✨)</text>
+  <!-- Bottom stars -->
+  <text x="200" y="460" font-family="sans-serif" font-size="20" text-anchor="middle" fill="rgba(255,255,255,0.3)">✦ ✦ ✦</text>
+</svg>

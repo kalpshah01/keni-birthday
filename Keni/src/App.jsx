@@ -27,7 +27,7 @@ const COLORS = [
 const SEQUENCE = ['red','yellow','blue','purple','green','black','white','orange','pink'];
 
 const colorByName = n => COLORS.find(c => c.name === n);
-const INTERVAL_MS =4100;
+const INTERVAL_MS =3800;
 
 export default function App() {
   const [phase,           setPhase]           = useState('start');
